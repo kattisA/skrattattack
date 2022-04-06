@@ -18,13 +18,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun playSound(view: View){
         if (mediaPlayer == null) {
-            mediaPlayer = MediaPlayer.create(this,R.raw.fartsound2891)
+            mediaPlayer = MediaPlayer.create(this, R.raw.fartsound2891)
             mediaPlayer!!.isLooping = false
             mediaPlayer!!.start()
         } else if(mediaPlayer?.isPlaying == false)
             mediaPlayer!!.isLooping = false
             mediaPlayer!!.start()
-
     }
 
     // Destroys the MediaPlayer instance when the app is closed
