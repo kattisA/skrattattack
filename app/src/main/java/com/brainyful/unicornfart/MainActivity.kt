@@ -19,10 +19,12 @@ class MainActivity : AppCompatActivity() {
         val sound2 = MediaPlayer.create(this, R.raw.fartsound2891)
         val sound3 = MediaPlayer.create(this, R.raw.sparklefart3052)
         val sound4= MediaPlayer.create(this, R.raw.sparklefart3050)
+        val sound5= MediaPlayer.create(this,R.raw.fairymagicsparkle871)
         sounds.add(sound1)
         sounds.add(sound2)
         sounds.add(sound3)
         sounds.add(sound4)
+        sounds.add(sound5)
 
         val unicornButton = findViewById<ImageButton>(R.id.playButton)
         unicornButton.setOnClickListener { playSound(it)}
